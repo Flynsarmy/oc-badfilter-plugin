@@ -12,17 +12,18 @@ If a `ListController` has a `filter` option but there are no filters defined in 
 * In *config_list.yaml* add `filter: config_filter.yaml`
 * In *config_filter.yaml* add `scopes:` and nothing else
 * Visit the controller in the backend and you'll be presented with the error:
-  > Uncaught TypeError: Cannot read property 'hasAttribute' of undefined
-  >    at FilterWidget.init (storm-min.js?v=465:3255)
-  >    at FilterWidget.init (storm-min.js?v=465:3392)
-  >    at new FilterWidget (storm-min.js?v=465:3052)
-  >    at HTMLDivElement.<anonymous> (storm-min.js?v=465:3247)
-  >    at Function.each (jquery.min.js?v=465:2)
-  >    at e.fn.init.each (jquery.min.js?v=465:2)
-  >    at e.fn.init.$.fn.filterWidget (storm-min.js?v=465:3244)
-  >    at HTMLDocument.<anonymous> (storm-min.js?v=465:3254)
-  >    at HTMLDocument.dispatch (jquery.min.js?v=465:2)
-  >    at HTMLDocument.v.handle (jquery.min.js?v=465:2)
+> Uncaught TypeError: Cannot read property 'hasAttribute' of undefined
+>
+>      at FilterWidget.init (storm-min.js?v=465:3255)
+>      at FilterWidget.init (storm-min.js?v=465:3392)
+>      at new FilterWidget (storm-min.js?v=465:3052)
+>      at HTMLDivElement.<anonymous> (storm-min.js?v=465:3247)
+>      at Function.each (jquery.min.js?v=465:2)
+>      at e.fn.init.each (jquery.min.js?v=465:2)
+>      at e.fn.init.$.fn.filterWidget (storm-min.js?v=465:3244)
+>      at HTMLDocument.<anonymous> (storm-min.js?v=465:3254)
+>      at HTMLDocument.dispatch (jquery.min.js?v=465:2)
+>      at HTMLDocument.v.handle (jquery.min.js?v=465:2)
 
 Records in the list can no longer be clicked properly, there are no hover highlights etc.
 
