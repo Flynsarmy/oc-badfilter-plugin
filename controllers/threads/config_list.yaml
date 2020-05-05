@@ -1,0 +1,30 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# List Title
+title: Threads
+
+# Model List Column configuration
+list: $/flynsarmy/badfilter/models/thread/columns.yaml
+
+# Model Class name
+modelClass: Flynsarmy\badfilter\Models\Thread
+
+# Link URL for each record
+recordUrl: flynsarmy/badfilter/threads/update/:id
+
+# Message to display if the list is empty
+noRecordsMessage: backend::lang.list.no_records
+
+# Records to display per page
+recordsPerPage: 20
+
+# Display checkboxes next to each record
+showCheckboxes: true
+
+# Displays the list column set up button
+showSetup: true
+
+# Filter widget configuration
+filter: config_filter.yaml
